@@ -1,0 +1,18 @@
+barpo Changelog
+
+v2.0
+- added multiple hosts attack: to arp poison a whole network just type xxx.xxx.xxx.0, to poison an hosts range type xxx.xxx.xxx.X-Y (see man page)
+- added the possibility to NOT fake our MAC Address (see man page)
+- fixed invalid awk IP validation
+- optimized code (such as arrays)
+- better code at all
+
+v1.2
+- fixed a serious bug: the MYIP variable was initialized before interface selection, lead to an MYIP erroneous value (thanks to snowpunk that test and debug it and find this error)
+- some code style changes
+
+v1.1
+- added diplay_stats() function that arise when pressed ctrl-c (thanks to 'trap' bash builtin function)
+- display_stats() shows injected shadow packets, target injected packets and gateway injected packets
+- code style more efficient (vi docet) and nicer output
+- fake attacker MAC Addres into target ARP Cache
